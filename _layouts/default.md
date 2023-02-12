@@ -5,6 +5,8 @@
 
 layout: util/compress
 ---
+
+
 {%- include multi_lng/get-lng-by-url.liquid -%}
 {%- assign lng = get_lng -%}
 {%- assign default_dark = nil -%}
@@ -13,6 +15,8 @@ layout: util/compress
   and site.data.conf.main.color_scheme_switch_top_nav != true -%}
   {%- assign default_dark = 'data-color-scheme="dark"' -%}
 {%- endif -%}
+
+
 
 {%- assign color_scheme_enabled = nil -%}
 {% if site.data.conf.main.color_scheme_dark -%}

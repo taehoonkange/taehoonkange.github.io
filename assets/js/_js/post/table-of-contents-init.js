@@ -29,12 +29,12 @@
         });
 
         /* set toc box top position below the toc-view-top */
-        let tocViewId = $("#toc-view-top");
+        let tocViewId = $("#table-container-side");
         if (tocViewId.length > 0) {
           /* get tocViewId bottom position */
           let tocViewIdBottom = (tocViewId.offset().top - $(window).scrollTop()) + tocViewId.outerHeight();
           /* set toc top */
-          tocContainer.css({ top: tocViewIdBottom + 'px' });
+          tocContainer.css({ top: 10 + 'px' });
         }
         return true;
       }

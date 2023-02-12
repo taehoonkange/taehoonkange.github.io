@@ -11,7 +11,11 @@
 {%- include util/auto-content-post-title-rename.liquid title = page_title -%}
 {%- capture page_title_tag -%} {{ site.data.owner[lng].brand }} - {{ page_title }} {%- endcapture -%}
 
+
 {%- if  page.layout == 'post' -%}
+{% if page.use_math %}
+  {% include mathjax_support.html %}
+{% endif %}
 <title>{{ page_title | truncate: 60 }}</title>
 {%- else -%}
 <title>{{ page_title_tag | truncate: 60 }}</title>
