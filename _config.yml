@@ -70,9 +70,9 @@ comments:
 highlighter: rouge
 markdown: kramdown
 
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+# lsi: false
+# excerpt_separator: "\n\n"
+# incremental: false
 
 kramdown:
   # This is default for GitHub Pages sites and cannot be changed.
