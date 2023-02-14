@@ -28,6 +28,11 @@ defaults:
     values:
       layout: "post"
       permalink: /posts/:path
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
   # for multilingual posts
   - scope:
@@ -37,6 +42,17 @@ defaults:
       hidden: true
       layout: "post"
       permalink: /:path
+  
+
+########################
+# 댓글 기능 추가
+#########################
+comments:
+  provider               : "utterances"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+
 
   # example: enable setting for all pages. You may still need to enable some setting from _data/conf/posts.yml or _data/conf/main.yml
   # - scope:
