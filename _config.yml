@@ -34,16 +34,6 @@ defaults:
       share: true
       related: true
 
-  # for multilingual posts
-  - scope:
-      # to separate language posts folders
-      path: "*/_posts"
-    values:
-      hidden: true
-      layout: "post"
-      permalink: /:path
-  
-
 ########################
 # 댓글 기능 추가
 #########################
