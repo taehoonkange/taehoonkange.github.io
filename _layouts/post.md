@@ -10,6 +10,14 @@ layout: default
 {%- include post_common/post-main.html post = page -%}
 
 
+
+<script src="https://utteranc.es/client.js"
+        repo="taehoonkange/taehoonkange.github.io"
+        issue-term="_posts"
+        theme="github-light"
+        async>
+</script>
+
 {%-comment-%} Pagination {%-endcomment-%}
 {% if site.posts.size > 1 -%}
   {% include multi_lng/get-pages-by-lng.liquid pages = site.posts -%}
