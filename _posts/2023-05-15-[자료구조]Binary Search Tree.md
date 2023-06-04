@@ -9,7 +9,6 @@ comments_disable: false
 
 use_math: true
 # publish date
-# date: 2023-02-13 00:26:08 +0900
 ---
 
 <p align="center"><img src="/assets/img/posts/tree.png"></p>
@@ -23,7 +22,7 @@ use_math: true
 
 #### Binary search tree란?
 + binary tree에서 구성되었다.
-+ Binary Search Tree에 x라는 node가 있다고 한다. 만약 y는 x의 left subtreㄷ의 node라고 하자. 그때 y의 key 값은 x의 key값보다 작거나 같다. 만약 x의 right subtree의 node라면, y의 key 값은 x의 key값보다 크거나 같다.
++ Binary Search Tree에 x라는 node가 있다고 한다. 만약 y는 x의 left subtree의 node라고 하자. 그때 y의 key 값은 x의 key값보다 작거나 같다. 만약 x의 right subtree의 node라면, y의 key 값은 x의 key값보다 크거나 같다.
 + 각 트리는 연결된 자료구조로 key, satellite data(key와 관련된 다른 값들), 각 노드 객체는 left child, right child, p(각자의 자식, 부모 노드에 대한 노드 포인터)로 구성된다.
 > 만약 자식이나 부모를 놓쳤다면, 그 적절한 구성 요소로 Null pointer를 포함시킨다.
 
