@@ -7,6 +7,7 @@ img: ":ds-logo.png"
 # disable comments on this page
 comments_disable: false
 
+use_math: true
 # publish date
 # date: 2023-02-13 00:26:08 +0900
 ---
@@ -22,6 +23,7 @@ comments_disable: false
 
 #### Binary search tree란?
 + binary tree에서 구성되었다.
++ Binary Search Tree에 x라는 node가 있다고 한다. 만약 y는 x의 left subtreㄷ의 node라고 하자. 그때 y의 key 값은 x의 key값보다 작거나 같다. 만약 x의 right subtree의 node라면, y의 key 값은 x의 key값보다 크거나 같다.
 + 각 트리는 연결된 자료구조로 key, satellite data(key와 관련된 다른 값들), 각 노드 객체는 left child, right child, p(각자의 자식, 부모 노드에 대한 노드 포인터)로 구성된다.
 > 만약 자식이나 부모를 놓쳤다면, 그 적절한 구성 요소로 Null pointer를 포함시킨다.
 
@@ -60,7 +62,7 @@ INORDER-TREE-WALK(x)
 4       INORDER-TREE-WALK(x.right)
 ```
 **중위순회를 할 경우**  
-8 4 9 2 10 5 11 1 12 6 13 3 14 7 15
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 
 ###### 전위순회(Preorder Traversal)
 **순서**: key -> left node ->  right node
@@ -73,7 +75,7 @@ PREORDER-TREE-WALK(x)
 4       PREORDER-TREE-WALK(x.right)
 ```
 **전위순회를 할 경우**   
-1 2 4 8 9 5 10 11 3 6 12 13 7 14 15
+8 4 2 1 3 6 5 7 12 10 9 11 14 13 15
 
 **pseudocode**
 ###### 후위순회(Postorder Traversal)
@@ -86,6 +88,6 @@ POSTORDER-TREE-WALK(x)
 4       print x. key
 ```
 **후위순회를 할 경우**    
-8 9 4 10 11 5 2 12 13 6 14 15 7 3 1
+1 3 2 5 7 6 4 9 11 10 13 15 14 12 8
 
 
