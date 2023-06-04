@@ -8,9 +8,9 @@
 
 // light color scheme definitions
 $brand-color-light: #416289;
-$main-background-light: #efefef;
+$main-background-light: #fff;
 $button-color-light: #a19e9e;
-$menu-background-light: #f9f9f9;
+$menu-background-light: #fff;
 $header-color-light: #5f5e5e;
 $container-background-light: #fff;
 $hr-color-light: #eee;
@@ -47,7 +47,7 @@ $anchor-text-color-light: #3389de;
 // default/default
 %default-colors-light {
   --multipurpose-container-background-color: #{$container-background-light};
-  --multipurpose-container-shadow: 1px 1px 0 1px #e5e2e2fb;
+  --multipurpose-container-shadow: 0px 0px 0 1px #e5e2e2fb;
 }
 // default/footer
 %footer-colors-light {
