@@ -22,7 +22,7 @@ $anchor-text-color-light: #3389de;
   --body-anchor-text-color: #{$anchor-text-color-light};
   --body-anchor-hover-text-color: #2f6597;
   --body-text-color: #6a6a6a;
-  --body-header-text-color: #{$header-color-light};
+  --body-header-text-color: #5f5e5e;
   --body-background-color: #{$main-background-light};
   --body-hr-color: #{$hr-color-light};
 }
@@ -151,21 +151,21 @@ $anchor-text-color-light: #3389de;
 // layout: projects, post, post-list
 // common/markdown-style
 %markdown-style-colors-light {
-  --markdown-styles-header-text-color: #{$header-color-light};
+  --markdown-styles-header-text-color: #3389de;
   --markdown-styles-table-border-color: #ddd;
-  --markdown-styles-blockquote-background-color: #eee;
-  --markdown-styles-blockquote-side-color: #{$brand-color-light};
+  --markdown-styles-blockquote-background-color: #f3f2f2;
+  --markdown-styles-blockquote-side-color: #3488de;
   --markdown-styles-kbd-background-color: #888;
   --markdown-styles-kbd-text-color: #eee;
-  --markdown-styles-code-background-color: #eee;
-  --markdown-styles-code-text-color: #333;
+  --markdown-styles-code-background-color: #fff;
+  --markdown-styles-code-text-color: #888;
   --markdown-styles-quote-background-color: #eee;
   --markdown-styles-quote-text-color: #{$header-color-light};
 }
 // layout: post, post-list
 // common/post-info
 %post-info-colors-light {
-  --post-title-text-color: #{$header-color-light};
+  --post-title-text-color: #5f5e5e;
   --post-meta-text-color: #808080;
 }
 // common/share
